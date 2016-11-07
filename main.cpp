@@ -1,9 +1,11 @@
 #include<iostream>
 #include "generator.hpp"
+#include<list>
 using namespace std;
 
 int main()
 {
-	cout<<"Hello\n";
+	list<int> times;
+	cout<<createInstance(5, times)<<endl;
 	return 0;
 }
