@@ -1,11 +1,14 @@
 #include<list>
 #include<stdlib.h>
+#include<iostream>
 #include<time.h>
+#include "generator.hpp"
+using namespace std;
 
-int createInstance(int processors, list<int> times)
+list<int> createInstance(int processors, int* size)
 {
+    list<int> times;
 	srand(time(NULL));
-	list<int> lista;
 	int width = 100;
 	int maxLength = 50;
 
@@ -23,5 +26,18 @@ int createInstance(int processors, list<int> times)
 			}
 		}
 	}
-	return times.length();
+    
+    *size = times.size();
+    return times;
+    
+    /* Converting to list.
+    int* r = new int[times.size()];
+    
+    for(int i=0; i<*size; i++){
+        cout<<times.front()<<endl;
+        r[i] = times.front();
+        times.pop_front();
+    }
+    
+	return r;*/
 }

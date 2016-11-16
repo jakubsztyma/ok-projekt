@@ -2,7 +2,8 @@
 
 #ifndef genarator_hpp
 #define generator_hpp
+using namespace std;
 
-int createInstance(int processors, list<int> time);
+list<int> createInstance(int processors, int* size);
 
 #endif
