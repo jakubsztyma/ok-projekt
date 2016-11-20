@@ -6,13 +6,21 @@ using namespace std;
 int main()
 {
     int size;
-    list<int> times = createInstance(5, &size);
-    
+    int processors = 10;
+    list<int> times = createInstance(processors, &size);
+    int result_time;
+
+    result_time = greedy(processors,size,times);
+    cout << "ilosc procesow " << endl ;
     cout<<times.size()<<endl;
-    for(int i=0; i<size; i++){
-       cout<<times.front()<<endl;
-       times.pop_front();
+    cout << endl << "kolejne czasy procesow ";
+    list<int>::iterator it;
+
+    for( it=times.begin(); it!=times.end(); ++it ){
+        cout<<(*it) << ' ';
+
     }
-    
+
+    cout << endl << "potrzeba " << result_time << " jednostek czasu";
 	return 0;
 }

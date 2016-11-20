@@ -5,5 +5,6 @@
 using namespace std;
 
 list<int> createInstance(int processors, int* size);
+int greedy(int, int,  list <int>);
 
 #endif
