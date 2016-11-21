@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1479719628 source:/home/mateusz/Desktop/ok-projekt/ok-projekt/generator.cpp
+	<list>
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	"generator.hpp"
+
+1479719271 /home/mateusz/Desktop/ok-projekt/ok-projekt/generator.hpp
+	<list>
+
+1479513681 source:/home/mateusz/Desktop/ok-projekt/ok-projekt/greedy.cpp
+	<list>
+	<algorithm>
+	<iostream>
+
+1479719302 source:/home/mateusz/Desktop/ok-projekt/ok-projekt/main.cpp
+	<iostream>
+	"generator.hpp"
+	<list>
+
+1479514147 source:/home/mateusz/Desktop/ok-projekt/ok-projekt/ok_projekt/main.cpp
+	<iostream>
+
