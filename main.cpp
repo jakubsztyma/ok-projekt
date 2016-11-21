@@ -5,12 +5,15 @@ using namespace std;
 
 int main()
 {
-    int size;
     int processors = 10;
-    list<int> times = createInstance(processors, &size);
+    int proc = 1000;
+    int optimum = 20000;
+    int maxLength = 100;
+    
+    list<int> times = createInstance(processors, proc, optimum, maxLength);
     int result_time;
 
-    result_time = greedy(processors,size,times);
+    result_time = greedy(processors,proc,times);
     cout << "ilosc procesow " << endl ;
     cout<<times.size()<<endl;
     cout << endl << "kolejne czasy procesow ";

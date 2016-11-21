@@ -5,29 +5,26 @@
 #include "generator.hpp"
 using namespace std;
 
-list<int> createInstance(int processors, int* size)
+list<int> createInstance(int processors, int proc, int optimum, int maxLength)
 {
     list<int> times;
 	srand(time(NULL));
-	int width = 100;
-	int maxLength = 50;
 
 	for(int i=0; i<processors; i++){
 		int cLength = 0;
 		while(true){
 			int next = rand() % maxLength;
-			if(cLength + next <= width){
+			if(cLength + next <= optimum){
 				times.push_back(next);
 				cLength += next;
 			}
 			else{
-				times.push_back(width - cLength);
+				times.push_back(optimum - cLength);
 				break;
 			}
 		}
 	}
-    
-    *size = times.size();
+
     return times;
     
     /* Converting to list.
