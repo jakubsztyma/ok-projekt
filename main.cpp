@@ -7,13 +7,13 @@ int main()
 {
     int processors = 10;
     int proc = 1000;
-    int optimum = 20000;
+    int optimum = 200;
     int maxLength = 100;
-    
+
     list<int> times = createInstance(processors, proc, optimum, maxLength);
     int result_time;
 
-    result_time = greedy(processors,proc,times);
+    result_time = greedy(processors,times.size(),times);
     cout << "ilosc procesow " << endl ;
     cout<<times.size()<<endl;
     cout << endl << "kolejne czasy procesow ";

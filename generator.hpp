@@ -7,4 +7,6 @@ using namespace std;
 list<int> createInstance(int processors, int proc, int optimum, int maxLength);
 int greedy(int, int,  list <int>);
 
+list <int> file_to_list(ifstream);
+
 #endif
