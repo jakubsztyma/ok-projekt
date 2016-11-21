@@ -1,6 +1,7 @@
 #include <list>
 #include <algorithm>
 #include <iostream>
+#include "generator.hpp"
 
 using namespace std;
 
