@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    int size;
+    int proc = 1000;
     int processors = 10;
-    list<int> times = createInstance(processors, &size);
+    list<int> times = createInstance(processors, proc);
     int result_time;
 
     result_time = greedy(processors,size,times);
